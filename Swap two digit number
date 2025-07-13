@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+    int num, firstDigit, secondDigit, temp;
+    scanf("%d", &num);
+    if (num < 10 && num > -10) {
+        printf("STDOUT\n");
+        return 0;
+    }
+    int n = num;
+    while (n >= 100 || n <= -100) {
+        n /= 10;
+    }
+    n = n < 0 ? -n : n;
+    firstDigit = n / 10;
+    secondDigit = n % 10;
+    temp = (secondDigit * 10) + firstDigit;
+    printf("%d\n", temp);
+
+    return 0;
+    }
