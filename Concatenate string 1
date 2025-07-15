@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+    char str1[1000], str2[1000], result[2000];
+    scanf("%s", str1);
+    scanf("%s", str2);
+    strcpy(result, str1);
+    strcat(result, str2);
+    printf("%s", result);
+return 0;
+}
+
